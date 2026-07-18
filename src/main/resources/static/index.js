@@ -11,9 +11,9 @@ var users = [
         "img" : "john.png"
     },
     {
-        "name" : "John",
-        "gender" : "male",
-        "img" : "john.png"
+        "name" : "Jane",
+        "gender" : "female",
+        "img" : "jane.png"
     }
 ]
 
