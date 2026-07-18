@@ -1,55 +1,82 @@
-body{
-    margin: 0px;
-    background-color: rgb(184, 175, 175);
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modified Card</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(184, 175, 175);
+        }
 
-h1 {
-    color: red;
-}
+        .navbar{
+            border: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+        }
 
-.navbar{
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-}
+        .navbar a{
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
 
-.navbar a{
-    padding: 20px;
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
+        .navbar a:hover{
+            color: blue;
+            background-color: aqua;
+        }
 
-.navbar a:hover{
-    color: blue;
-    background-color: aqua;
-}
+        .card{
+            border: 1px solid black;
+            width: 350px;
+            border-radius: 30px;
+            text-align: center;
+            margin: 70px auto;
+            overflow: hidden;
+            padding-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
 
-.card{
-    border: 1px solid black;
-    width: 350px;
-    border-radius: 30px;
-    text-align: center;
-    margin-top: 70px;
-    overflow: hidden;
-    /* margin-left: 40%; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 20px;
-    background-color: white;
-}
+        .card img{
+            width: 100%;
+        }
 
-.card img{
-    /* width: 300px; */
-    width: 100%;
-}
+        .card h1{
+            color: red;
+        }
 
-.card button{
-    border-style: none;
-    padding: 10px;
-    width: 80%;
-    border-radius: 8px;
-}
+        .card button{
+            border: none;
+            padding: 12px;
+            width: 80%;
+            border-radius: 8px;
+            background-color: royalblue;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .card button:hover{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/350x200" alt="Image">
+        <h1>Product Card</h1>
+        <p>This is a sample card design.</p>
+        <button>Buy Now</button>
+    </div>
+
+</body>
+</html>s
