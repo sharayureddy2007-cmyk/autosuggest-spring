@@ -3,10 +3,10 @@ data = {
     "name":" john",
     "gender": "male",
 }
-//data.name// Maha
+
 var users = [
     {
-        "name" : "Vaishno",
+        "name" : "john",
         "gender" : "Male",
         "img" : "john.png"
     },
