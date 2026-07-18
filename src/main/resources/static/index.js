@@ -1,12 +1,12 @@
 console.log("hello from js")
 data = {
-    "name":" john",
+    "name":" John",
     "gender": "male",
 }
 
 var users = [
     {
-        "name" : "john",
+        "name" : "John",
         "gender" : "Male",
         "img" : "john.png"
     },
