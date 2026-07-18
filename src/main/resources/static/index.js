@@ -1,25 +1,41 @@
-// alert ("alert from js") 
 console.log("hello from js")
-data= {
-    "name":"john doe",
+data = {
+    "name":" john",
     "gender": "male",
+}
+//data.name// Maha
+var users = [
+    {
+        "name" : "Vaishno",
+        "gender" : "Male",
+        "img" : "john.png"
+    },
+    {
+        "name" : "John",
+        "gender" : "male",
+        "img" : "john.png"
+    }
+]
+
+var id = 0;
+
+function toggleUser(){
+    id = (id + 1)%2
+    // get the elements
+
+    // 1: image
+    var userImage = document.getElementById("user-image");
+    userImage.src = users[id].img;
+
+    // 2: name
+    var userName = document.getElementById("user-name");
+    userName.innerHTML = users[id].name;
+
+    // 3: gender
+    var userGender = document.getElementById("user-gender");
+    userGender.innerHTML = users[id].gender;
 
 }
-data.name
-var users =[
-    {
-    "name":"john doe",
-    "gender":"female",
-    "img":"john.png"
-},
-{
-    "name": " john doe",
-    "gender" : "male",
-    "img" : "jane.png"
-} 
-]
-var id=0;
-function toggleuser
 function randomUser(){
     fetch('https://randomuser.me/api/')
         .then(function(response){
